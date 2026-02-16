@@ -4208,3 +4208,13 @@ input, select, textarea {
 		width: 80%;        /* Even more conservative on tiny screens */
 		}
 	}
+	/* Force all spotlight section content to be left-aligned for readability */
+	.wrapper.spotlight .content {
+		text-align: left !important;
+	}
+	
+	.wrapper.spotlight .content h2,
+	.wrapper.spotlight .content p,
+	.wrapper.spotlight .content ul {
+		text-align: left !important;
+	}
