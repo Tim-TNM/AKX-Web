@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Thank You | Alaska Extreme Fourwheelers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- Redirect to home after 10 seconds -->
+    <meta http-equiv="refresh" content="10; url=index.html" />
+
+    <style>
+      /* Fade-in animation for the thank-you content */
+      #thankyou .inner {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1.2s ease-out forwards;
+        animation-delay: 0.5s;
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Optional soft fade background */
+      body {
+        background: linear-gradient(to bottom, #2e3141 0%, #20222e 100%);
+      }
+
+      /* Link style to match theme */
+      #thankyou a {
+        color: #f2bb13;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <section id="thankyou" class="wrapper style1 special">
+        <div class="inner">
+          <div class="logo">
+            <img src="images/thanks.png" alt="AKX Logo" width="240">
+          </div>
+          <h2 class="major">Thank You!</h2>
+          <p>Your message has been sent successfully.<br>
+             We appreciate you reaching out to Alaska Extreme Fourwheelers.<br>
+             You'll be redirected to the main page shortly.</p>
+
+          <p style="margin-top:1.5em;">
+            <em>If you're not redirected automatically,
+              <a href="index.html">click here to return to the homepage</a>.
+            </em>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
