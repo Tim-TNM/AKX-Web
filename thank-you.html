@@ -11,12 +11,12 @@
     <meta http-equiv="refresh" content="10; url=index.html" />
 
     <style>
-      /* Fade-in animation for the thank-you content */
+      /* Fade-in animation */
       #thankyou .inner {
         opacity: 0;
         transform: translateY(30px);
         animation: fadeInUp 1.2s ease-out forwards;
-        animation-delay: 0.5s;
+        animation-delay: 0.3s;
       }
       @keyframes fadeInUp {
         to {
@@ -25,24 +25,34 @@
         }
       }
 
-      /* Optional soft fade background */
+      /* Override template's scroll-triggered opacity rules */
+      body#thankyou-page .wrapper,
+      body#thankyou-page .wrapper .inner {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+
+      /* Optional gradient background */
       body {
         background: linear-gradient(to bottom, #2e3141 0%, #20222e 100%);
       }
 
-      /* Link style to match theme */
+      /* Link color */
       #thankyou a {
         color: #f2bb13;
         text-decoration: underline;
       }
     </style>
   </head>
-  <body class="is-preload">
+
+  <body id="thankyou-page" class="is-preload">
     <div id="page-wrapper">
-      <section id="thankyou" class="wrapper style1 special">
+      <!-- Thank-you section -->
+      <section id="thankyou" class="wrapper style1">
         <div class="inner">
           <div class="logo">
-            <img src="images/thanks.png" alt="AKX Logo" width="240">
+            <img src="images/thanks.png" alt="AKX Gladiator" width="480">
           </div>
           <h2 class="major">Thank You!</h2>
           <p>Your message has been sent successfully.<br>
